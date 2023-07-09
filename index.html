@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do-list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+     <div class="title">
+        <h1>To Do List</h1>
+     </div>
+    </header>
+    <div class="container">
+        <span><h2>My To-Do's</h2></span>
+        <div><input type="text" placeholder="Add-To-Do-List" id="search">
+        <button class="add" onclick="newElement()">+</button>
+        </div>
+        <div class="list-box">
+            <ul id="ul">
+                <li class="checked">Read a book.</li>
+                <li>Workout in the morning.</li>
+                <li>Play Volleyball.</li>
+            </ul>
+        </div>
+        <span id="delete"><h3>Do you want to delete all?</h3> <button id="deleteBtn" onclick="deleteList()">X</button></span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
