@@ -54,7 +54,5 @@ for (let i = 0 ;i < nodeList.length; i++){
   }
 }
 function deleteList(){
-for (let i = 0 ;i < nodeList.length; i++){
-  document.getElementById("ul").remove(nodeList[i]);
-}
+ document.getElementById('ul').innerHTML = "";
 }
