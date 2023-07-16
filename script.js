@@ -18,13 +18,11 @@ for(let i = 0 ;i < close.length; i++){
 }
 //toggle line through of list items
 
-var list = document.querySelector('ul');
-list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'LI') {
-    ev.target.classList.toggle('checked');
+let list = document.querySelector("ul").addEventListener('click',function(e){
+  if(e.target.tagName === "LI"){
+    e.target.classList.toggle("checked");
   }
-}, false);
-
+})
 // Adding new list
 
 function newElement(){
