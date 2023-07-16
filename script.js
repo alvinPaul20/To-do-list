@@ -19,7 +19,7 @@ for(let i = 0 ;i < close.length; i++){
 //toggle line through of list items
 
 let list = document.querySelector("ul").addEventListener('click',function(e){
-  if(e.target.tagName === "LI"){
+  if(e.target.matches("li")){
     e.target.classList.toggle("checked");
   }
 })
